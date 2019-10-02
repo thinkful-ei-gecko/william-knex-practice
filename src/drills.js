@@ -48,16 +48,16 @@ const knexInstance = knex({
 // getAllItemsAddedAfterDate(10);
 
 
-function totalCostPerCategory() {
-  knexInstance
-    .select('category')
-    .from('shopping_list')
-    .sum('price AS Total Cost')
-    .groupBy('category')
-    .orderBy([{column: 'Total Cost', order: 'ASC'}])
-    .then(result => {
-      console.log(result);
-    });
-}
+// function totalCostPerCategory() {
+//   knexInstance
+//     .select('category')
+//     .from('shopping_list')
+//     .sum('price AS Total Cost')
+//     .groupBy('category')
+//     .orderBy([{column: 'Total Cost', order: 'ASC'}])
+//     .then(result => {
+//       console.log(result);
+//     });
+// }
 
-totalCostPerCategory();
+// totalCostPerCategory();
